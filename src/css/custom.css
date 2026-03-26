@@ -31,9 +31,11 @@
   --ifm-color-primary-light: #7dd3fc;
   --ifm-color-primary-lighter: #bae6fd;
   --ifm-color-primary-lightest: #e0f2fe;
-  --ifm-background-color: #080d19;
-  --ifm-background-surface-color: #0c1222;
-  --ifm-navbar-background-color: rgba(8, 13, 25, 0.85);
+  --ifm-background-color: #0a0f1e;
+  --ifm-background-surface-color: #111827;
+  --ifm-navbar-background-color: rgba(10, 15, 30, 0.9);
+  --ifm-font-color-base: #e2e8f0;
+  --ifm-heading-color: #f1f5f9;
 }
 
 /* === NAVBAR === */
@@ -130,7 +132,7 @@
 
 .kb-subtitle {
   font-size: 1.25rem;
-  font-weight: 300;
+  font-weight: 400;
   color: var(--kb-text-muted);
   max-width: 600px;
   margin: 0 auto 2.5rem;
@@ -219,7 +221,7 @@
   font-family: 'IBM Plex Mono', monospace;
   font-size: 0.82rem;
   line-height: 1.8;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(226, 232, 240, 0.85);
 }
 
 .kb-terminal-prompt {
@@ -227,11 +229,11 @@
 }
 
 .kb-terminal-cmd {
-  color: #fff;
+  color: #f1f5f9;
 }
 
 .kb-terminal-output {
-  color: rgba(255, 255, 255, 0.45);
+  color: rgba(226, 232, 240, 0.6);
 }
 
 .kb-terminal-success {
@@ -466,10 +468,10 @@
 }
 
 [data-theme='dark'] {
-  --kb-surface: #0c1222;
-  --kb-surface-raised: #131b2e;
-  --kb-surface-border: rgba(56, 189, 248, 0.12);
-  --kb-text-muted: rgba(255, 255, 255, 0.5);
+  --kb-surface: #0f1729;
+  --kb-surface-raised: #1a2440;
+  --kb-surface-border: rgba(56, 189, 248, 0.15);
+  --kb-text-muted: rgba(226, 232, 240, 0.75);
   --kb-accent-dim: rgba(56, 189, 248, 0.15);
 }
 
