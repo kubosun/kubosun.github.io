@@ -43,6 +43,12 @@ const config: Config = {
     },
     navbar: {
       title: 'Kubosun',
+      logo: {
+        alt: 'Kubosun',
+        src: 'img/logo.svg',
+        width: 32,
+        height: 32,
+      },
       items: [
         {
           type: 'docSidebar',
