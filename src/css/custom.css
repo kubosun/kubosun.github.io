@@ -540,3 +540,36 @@
 .main-wrapper { background: var(--ifm-background-color); }
 
 footer.footer { border-top: 1px solid var(--kb-surface-border); }
+
+/* === MOBILE SIDEBAR FIX === */
+.navbar-sidebar {
+  background: var(--ifm-background-color);
+}
+
+.navbar-sidebar__backdrop {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+[data-theme='dark'] .navbar-sidebar {
+  background: #0a0f1e;
+}
+
+/* Ensure mobile doc sidebar is visible */
+@media (max-width: 996px) {
+  .menu {
+    background: var(--ifm-background-color);
+  }
+
+  [data-theme='dark'] .menu {
+    background: #0a0f1e;
+  }
+
+  .navbar {
+    background: var(--ifm-background-color);
+    backdrop-filter: none;
+  }
+
+  [data-theme='dark'] .navbar {
+    background: #0a0f1e;
+  }
+}
