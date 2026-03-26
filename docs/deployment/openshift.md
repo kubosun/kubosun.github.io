@@ -1,10 +1,14 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 ---
 
-# Deploying to OpenShift
+# Deploying to OpenShift (Manual)
 
-Kubosun Console deploys to OpenShift using BuildConfigs, ImageStreams, and a Route. The backend uses OpenShift OAuth for authentication.
+:::tip Recommended
+Use the [Kubosun CLI](./cli) for automated deployment: `kubosun setup`
+:::
+
+This page documents the manual deployment process. Kubosun Console deploys to OpenShift using BuildConfigs, ImageStreams, and a Route. The backend uses OpenShift OAuth for authentication.
 
 ## Prerequisites
 

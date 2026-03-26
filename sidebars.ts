@@ -21,7 +21,7 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: 'Deployment',
-      items: ['deployment/openshift', 'deployment/docker', 'deployment/kubernetes'],
+      items: ['deployment/cli', 'deployment/openshift', 'deployment/docker', 'deployment/kubernetes'],
     },
     {
       type: 'category',
