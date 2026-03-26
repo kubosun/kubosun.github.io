@@ -1,0 +1,8 @@
+{
+  "label": "Deployment",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "Deploy Kubosun Console to OpenShift, Kubernetes, or Docker."
+  }
+}

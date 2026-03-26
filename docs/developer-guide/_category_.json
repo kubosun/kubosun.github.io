@@ -1,0 +1,8 @@
+{
+  "label": "Developer Guide",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "Extend Kubosun Console with new resources, endpoints, AI tools, and dashboard cards."
+  }
+}
