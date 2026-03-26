@@ -542,34 +542,38 @@
 footer.footer { border-top: 1px solid var(--kb-surface-border); }
 
 /* === MOBILE SIDEBAR FIX === */
-.navbar-sidebar {
-  background: var(--ifm-background-color);
+.navbar-sidebar,
+.navbar-sidebar .navbar-sidebar__items,
+.navbar-sidebar .menu {
+  background-color: #ffffff !important;
 }
 
 .navbar-sidebar__backdrop {
-  background: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.6) !important;
 }
 
-[data-theme='dark'] .navbar-sidebar {
-  background: #0a0f1e;
+[data-theme='dark'] .navbar-sidebar,
+[data-theme='dark'] .navbar-sidebar .navbar-sidebar__items,
+[data-theme='dark'] .navbar-sidebar .menu {
+  background-color: #0a0f1e !important;
 }
 
-/* Ensure mobile doc sidebar is visible */
+/* Docs page sidebar (desktop left panel) */
+.theme-doc-sidebar-container {
+  background-color: #f8fafc;
+}
+
+[data-theme='dark'] .theme-doc-sidebar-container {
+  background-color: #0f1729;
+}
+
 @media (max-width: 996px) {
-  .menu {
-    background: var(--ifm-background-color);
-  }
-
-  [data-theme='dark'] .menu {
-    background: #0a0f1e;
-  }
-
   .navbar {
-    background: var(--ifm-background-color);
-    backdrop-filter: none;
+    background-color: #ffffff !important;
+    backdrop-filter: none !important;
   }
 
   [data-theme='dark'] .navbar {
-    background: #0a0f1e;
+    background-color: #0a0f1e !important;
   }
 }
