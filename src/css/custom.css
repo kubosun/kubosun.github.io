@@ -13,9 +13,9 @@
   --ifm-font-family-monospace: 'IBM Plex Mono', 'JetBrains Mono', monospace;
   --ifm-heading-font-family: 'Outfit', system-ui, sans-serif;
 
-  --kb-accent: #38bdf8;
-  --kb-accent-dim: rgba(56, 189, 248, 0.15);
-  --kb-cyan: #22d3ee;
+  --kb-accent: #0284c7;
+  --kb-accent-dim: rgba(2, 132, 199, 0.1);
+  --kb-cyan: #0369a1;
   --kb-surface: #0c1222;
   --kb-surface-raised: #131b2e;
   --kb-surface-border: rgba(56, 189, 248, 0.12);
@@ -460,14 +460,75 @@
 
 /* === LIGHT MODE OVERRIDES === */
 :root {
-  --kb-surface: #f8fafc;
+  --kb-surface: #f1f5f9;
   --kb-surface-raised: #ffffff;
-  --kb-surface-border: rgba(0, 0, 0, 0.08);
-  --kb-text-muted: rgba(0, 0, 0, 0.55);
-  --kb-accent-dim: rgba(14, 165, 233, 0.08);
+  --kb-surface-border: rgba(0, 0, 0, 0.1);
+  --kb-text-muted: rgba(15, 23, 42, 0.7);
+  --kb-accent-dim: rgba(2, 132, 199, 0.08);
+}
+
+/* Light mode: darken accent colors for contrast */
+:root .kb-title-gradient {
+  background: linear-gradient(135deg, #0f172a 0%, #0369a1 50%, #0284c7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+:root .kb-cta-primary {
+  background: linear-gradient(135deg, #0369a1, #0284c7);
+  color: #fff !important;
+}
+
+:root .kb-cta-primary:hover {
+  color: #fff !important;
+  box-shadow: 0 0 25px rgba(2, 132, 199, 0.35);
+}
+
+:root .kb-terminal-body {
+  color: rgba(15, 23, 42, 0.8);
+}
+
+:root .kb-terminal-prompt {
+  color: #0369a1;
+}
+
+:root .kb-terminal-cmd {
+  color: #0f172a;
+}
+
+:root .kb-terminal-output {
+  color: rgba(15, 23, 42, 0.55);
+}
+
+:root .kb-terminal-success {
+  color: #15803d;
+}
+
+:root .kb-feature-icon {
+  color: #0284c7 !important;
+  border-color: rgba(2, 132, 199, 0.2);
+}
+
+:root .kb-arch-arrow {
+  color: #0284c7;
+}
+
+:root .kb-arch-box-label {
+  color: #0284c7;
+}
+
+:root .kb-badge {
+  color: #0369a1;
+}
+
+:root .kb-badge-dot {
+  background: #0284c7;
 }
 
 [data-theme='dark'] {
+  --kb-accent: #38bdf8;
+  --kb-cyan: #22d3ee;
   --kb-surface: #0f1729;
   --kb-surface-raised: #1a2440;
   --kb-surface-border: rgba(56, 189, 248, 0.15);
